@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Search</title>
+</head>
+<body>
+  <h1 class="page-header">Поиск репозиториев на гитхаб</h1>
+  <form class="form">
+    <input class="search" type="text" value="" placeholder="Введите запрос" autocomplete="off">
+    <button class="submit" type="submit">Search</button>
+    <span class="error-message"></span>
+  </form>
+  <ul class="repository-list"></ul>
+
+  <template id="repository">
+    <li class="repository__item">
+      <a class="repository__link" href="" target="_blank">
+        <p class="repository__name"></p>
+      </a>
+      <p>Язык: <span class="repository__language"></span></p>
+      <p>Обновлен: <span class="repository__updated"></span></p>
+    </li>
+  </template>
+  <script src="main.js"></script>
+</body>
+</html>
